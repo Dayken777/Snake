@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Змейка на JS</title>
+    <link rel="icon" href="./img/snake-_1_.ico">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section class="game">
+            <div class="game__container">
+                <div class="game__area">
+                    <div class="game__title">Super Snake</div>
+                    <div class="game_screen">
+                        <div class="left-side side">
+                            <div class="game-buttons__left-side">
+                                <div class="row row-1">
+                                    <div name = "button" class="button-top button"></div>
+                                </div>
+                                <div class="row row-2">
+                                    <div name = "button" class="button-left button"></div>
+                                    <div name = "button" class="button-circle button"></div>
+                                    <div name = "button" class="button-right button"></div>
+                                </div>
+                                <div class="row row-3">
+                                    <div name = "button" class="button-down button"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id = "screen" class="screen" value="false">
+                            <audio id="audio" src="/music/background-music.mp3" loop autoplay></audio>
+                            <div class="frame top-frame"></div>
+                            <div id="screen-area" class="screen-area">
+                                <div class = "canvas"></div><script src="./js/game.js"></script>
+                                <div id ="title-start-game" class="title-start-game">START GAME</div>
+                            </div>
+                            <div class="frame bottom-frame">
+                                <div id="start" class="button-start">on</div>
+                            </div>
+                        </div>
+                        <div class="right-side side"></div>
+                    </div>
+                </div>
+            </div>
+    </section>
+</body>
+<script src="./js/script.js"></script>
+<script src="./js/sound.js"></script>
+<script src="./js/game.js"></script>
+</html>
